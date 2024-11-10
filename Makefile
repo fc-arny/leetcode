@@ -10,5 +10,5 @@ endif
 	@mkdir -p $(FOLDER)
 	@echo "Generate Go-files $(FOLDER).go and $(FOLDER)_test.go"
 	
-	@echo "package leetcode\n" > $(FOLDER)/$(FOLDER).go
-	@echo "package leetcode_test\n" > $(FOLDER)/$(FOLDER)_test.go
+	@echo "package github.com/fc-arny/leetcode\n" > $(FOLDER)/$(FOLDER).go
+	@echo "package github.com/fc-arny/leetcode\n" > $(FOLDER)/$(FOLDER)_test.go
