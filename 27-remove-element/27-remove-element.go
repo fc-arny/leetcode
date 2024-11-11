@@ -1,6 +1,6 @@
 package leetcode
 
-// Problem: Remove elemtn
+// Problem: Remove element
 // Link: https://leetcode.com/problems/remove-element/?envType=study-plan-v2&envId=top-interview-150
 // Lessons lerned:
 // - Using AI for programming - the out future (easy generating test)
