@@ -1,4 +1,5 @@
-
+## Leetcode Profile
+https://leetcode.com/u/fc-arny/
 
 ## How to start solving a problem
 1. One folder for one problem using `make generate FOLDER=01-hello-world`
@@ -14,4 +15,4 @@
 5. GOW + GRC
 
 ## Problems
-Link: https://leetcode.com/studyplan/top-interview-150/
+1. Link: https://leetcode.com/studyplan/top-interview-150/
