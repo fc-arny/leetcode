@@ -2,25 +2,19 @@ package leetcode
 
 // Problem: #80 Remove duplicates from sorted array 2
 // Link: https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/?envType=study-plan-v2&envId=top-interview-150
-
+// Lessons lerned:
+// - if you can optimize it, optimize it (e.g. break the loop)
 func removeDuplicates(nums []int) int {
-	i, d := 0, 1
-	for i = 0; i < len(nums); i++ {
-		if i <= 0 {
-			continue
-		}
+	mmap := make(map[int]int)
+	count := 0
 
-		if nums[i] != nums[i-1] {
-			d = 1
-		} else {
-			d++
-		}
-
-		if nums[i] == nums[i-1] && d > 2 {
-			nums = append(nums[:i], nums[i+1:]...)
-			i--
+	for i := 0; i < len(nums); i++ {
+		if mmap[nums[i]] < 2 {
+			mmap[nums[i]] = mmap[nums[i]] + 1
+			nums[count] = nums[i]
+			count++
 		}
 	}
 
-	return i
+	return count
 }
