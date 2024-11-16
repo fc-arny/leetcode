@@ -7,7 +7,16 @@ import "math/big"
 // Lessons lerned:
 // - Never work with math/big package => My first solution don't work with n = 30
 // - Try math/big package and failed on n = 6079 cause time limit is reached
-// - 
+// -
+func trailingZeroes(n int) int {
+	zeroes := 0
+	for n > 0 {
+		n /= 5
+		zeroes += n
+	}
+	return zeroes
+}
+
 func trailingZeroes_with_big(n int) int {
 	n_factorial := big.NewInt(1)
 	for i := 2; i <= n; i++ {
